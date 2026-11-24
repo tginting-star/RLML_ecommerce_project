@@ -1,0 +1,56 @@
+warning: LF will be replaced by CRLF in Project/Project code.ipynb.
+The file will have its original line endings in your working directory
+[1mdiff --git a/Project/Project code.ipynb b/Project/Project code.ipynb[m
+[1mindex 110ae46..d781903 100644[m
+[1m--- a/Project/Project code.ipynb[m	
+[1m+++ b/Project/Project code.ipynb[m	
+[36m@@ -7,15 +7,6 @@[m
+     "## Motivation and Problem Statement\n"[m
+    ][m
+   },[m
+[31m-  {[m
+[31m-   "cell_type": "markdown",[m
+[31m-   "metadata": {},[m
+[31m-   "source": [[m
+[31m-    "## Research Question: \n",[m
+[31m-    "\n",[m
+[31m-    "Can we predict whether an online session will end in a purchase based on the visitor's browsing behaviour?"[m
+[31m-   ][m
+[31m-  },[m
+   {[m
+    "cell_type": "markdown",[m
+    "metadata": {},[m
+[36m@@ -46,7 +37,7 @@[m
+    "cell_type": "markdown",[m
+    "metadata": {},[m
+    "source": [[m
+[31m-    "Our target is `revenue`, which tells us whether each past session ended in a purchase or not. It is a binary option where we could categorize each session in \"ended in purchase\" or \"not ended in purchase\". This makes the problem a Supervised Classification task. In this case, the model learns from the behaviour recorded in past sessions (pages visited, time spent, bounce, etc) and, for a new session, estimates the whether it ends in a purchase or not.\n",[m
+[32m+[m[32m    "Our target is `revenue`, which tells us whether each past session ended in a purchase or not. It is a binary option where we could categorize each session in \"ended in purchase\" or \"not ended in purchase\". This makes the problem a Supervised Classification task. In this case, the model learns from the behaviour recorded in past sessions (pages visited, time spent, bounce, etc) and, for a new session, estimates whether it ends in a purchase or not.\n",[m
+     "\n",[m
+     "On the other hand, other machine learning techniques like regression does not apply because the dataset has no continuous target such as an order value and clustering is not needed to answer our question."[m
+    ][m
+[36m@@ -128,42 +119,15 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 32,[m
+[32m+[m[32m   "execution_count": 192,[m
+    "metadata": {},[m
+[31m-   "outputs": [[m
+[31m-    {[m
+[31m-     "name": "stdout",[m
+[31m-     "output_type": "stream",[m
+[31m-     "text": [[m
+[31m-      "Requirement already satisfied: imbalanced-learn in c:\\Users\\marti\\AppData\\Local\\Python\\pythoncore-3.15-64\\Lib\\site-packages (0.14.2)\n",[m
+[31m-      "Requirement already satisfied: numpy<3,>=1.25.2 in c:\\Users\\marti\\AppData\\Local\\Python\\pythoncore-3.15-64\\Lib\\site-packages (from imbalanced-learn) (2.5.4)\n",[m
+[31m-      "Requirement already satisfied: scipy<2,>=1.11.4 in c:\\Users\\marti\\AppData\\Local\\Python\\pythoncore-3.15-64\\Lib\\site-packages (from imbalanced-learn) (1.18.1)\n",[m
+[31m-      "Requirement already satisfied: scikit-learn<2,>=1.4.2 in c:\\Users\\marti\\AppData\\Local\\Python\\pythoncore-3.15-64\\Lib\\site-packages (from imbalanced-learn) (1.9.1)\n",[m
+[31m-      "Requirement already satisfied: sklearn-compat<0.2,>=0.1.6 in c:\\Users\\marti\\AppData\\Local\\Python\\pythoncore-3.15-64\\Lib\\site-packages (from imbalanced-learn) (0.1.6)\n",[m
+[31m-      "Requirement already satisfied: joblib<2,>=1.2.0 in c:\\Users\\marti\\AppData\\Local\\Python\\pythoncore-3.15-64\\Lib\\site-packages (from imbalanced-learn) (1.6.0)\n",[m
+[31m-      "Requirement already satisfied: threadpoolctl<4,>=2.0.0 in c:\\Users\\marti\\AppData\\Local\\Python\\pythoncore-3.15-64\\Lib\\site-packages (from imbalanced-learn) (3.8.0)\n",[m
+[31m-      "Requirement already satisfied: cloudpickle>=3.0 in c:\\Users\\marti\\AppData\\Local\\Python\\pythoncore-3.15-64\\Lib\\site-packages (from joblib<2,>=1.2.0->imbalanced-learn) (3.1.2)\n",[m
+[31m-      "Requirement already satisfied: narwhals>=2.0.1 in c:\\Users\\marti\\AppData\\Local\\Python\\pythoncore-3.15-64\\Lib\\site-packages (from scikit-learn<2,>=1.4.2->imbalanced-learn) (2.28.0)\n",[m
+[31m-      "Note: you may need to restart the kernel to use updated packages.\n"[m
+[31m-     ][m
+[31m-    },[m
+[31m-   
